@@ -33,4 +33,17 @@ else:
         min = y
     print("3) z =", max)
     
-#Задача 2 пункт 3
+#Задача 3
+x = int(input())
+y = int(input())
+z = int(input())
+minXYZ = x
+if x >=z:
+    maxXZ = x
+else:
+    maxXZ = z
+if y < minXYZ:
+    minXYZ = y
+if z < minXYZ:
+    minXYZ = z
+print("L =", 2*maxXZ - 3*minXYZ)
