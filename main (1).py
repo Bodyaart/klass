@@ -24,7 +24,6 @@ while num >= -21:
     if count %3 == 0:
         print(num)
         num -=1 
-        count +=1
         
 #Задача 3
 i = 0 
