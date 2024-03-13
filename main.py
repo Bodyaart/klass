@@ -1,49 +1,39 @@
 #coding:utf-8
-#Задача 1
-N = int(input())
-if N % 3 == 0:
-    print("кратно")
-else:
-    print("не кратно")
-    
-#Задача 2 пункт 1
-x = int(input())
-y = int(input())
-print("1) z =",(min(x,y) + 0.5)/(1+max(x,y)))
-if x >=0:
-    print("2) z =",max(x,y))
-else: 
-    print("2) z =",min(x,y))
-if y >=0:
-    print("3) z =",min(x,y))
-else:
-    print("3) z =",max(x**2,y**2))
-    
-#Задача 2 пункт 2
-if x >=+0:
-    print("z) z =",max)
-else:
-    print("2) z =",min)
-if y >=0:
-    print("3) z=", min)
-else:
-    if x**2 >= y**2:
-        max = x
-    else:
-        min = y
-    print("3) z =", max)
-    
+
+#Задача 1 1)
+n=1 
+while 3*n**4 - 730*n>= 5:
+    n+=1 
+print(n-1)
+
+#2)
+m=100 
+k=0 
+while 4**k<m:
+    k+=1 
+print(k-1)
+
+#Задача 2 
+m = int(input("Введите целое число m"))
+k = m // 4
+print("Наибольшее целое k")
+
 #Задача 3
-x = int(input())
-y = int(input())
-z = int(input())
-minXYZ = x
-if x >=z:
-    maxXZ = x
-else:
-    maxXZ = z
-if y < minXYZ:
-    minXYZ = y
-if z < minXYZ:
-    minXYZ = z
-print("L =", 2*maxXZ - 3*minXYZ)
+N = int(input("Введите натуральное число N:"))
+R = (N + 1) // 2 
+result = 2 * R 
+print("Наименьшее число вида 2R, превосходящее N")
+
+#Задача 4
+m=10 
+fn_minus_2 = 1 
+fn_minus_1 = 1 
+fn = fn_minus_1 + fn_minus_2 
+while fn <= m:
+    fn_minus_2 = fn_minus_1
+    fn_minus_1 = fn 
+    fn = fn_minus_1 + fn_minus_2
+result = fn 
+print(fn)
+
+
